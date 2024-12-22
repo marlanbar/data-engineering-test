@@ -22,7 +22,7 @@ def calculate_commission_per_order(row):
         elif idx == 2:
             commission_rate = 0.0095
         else:
-            continue  # No commission for others
+            commission_rate = 0  # No commission for others
         commission_amount = round(net_invoiced_amount * commission_rate, 2)
         commissions.append({'salesowner': owner, 'commission': commission_amount})
     return commissions
@@ -41,8 +41,6 @@ def calculate_total_commissions(orders_df, invoicing_df):
     # Adjust column names for consistency
     invoicing_df = invoicing_df.rename(columns={
         'orderId': 'order_id',
-        'grossValue': 'grossValue',
-        'vat': 'vat'
     })
 
     # Calculate net invoiced amount
