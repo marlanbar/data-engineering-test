@@ -39,7 +39,7 @@ This project processes and analyzes business data for IFCO's Data Team. It inclu
    python src/main.py
    ```
 
-2. **Check the Output**: Review the generated CSV files and plots in the `output` directory.
+2. **Check the Output**: Review the generated CSV files in the `output` directory.
 
 ## Running Unit Tests
 
