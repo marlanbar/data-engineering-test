@@ -5,8 +5,7 @@ from test_2_contact_full_name import dataframe_with_full_name
 from test_3_contact_address import dataframe_with_contact_address
 from test_4_commissions import calculate_total_commissions
 from test_5_companies_salesowners import dataframe_of_companies_with_salesowners
-from test_6_data_visualizations import plot_distribution_of_crate_type, plot_sales_owners_needing_training, plot_top_performers_plastic_crates
-11
+
 def main():
     # Load data
     print("Loading data...")
@@ -44,16 +43,6 @@ def main():
     df_3 = dataframe_of_companies_with_salesowners(orders_df)
     df_3.to_csv(os.path.join(output_dir, 'companies_with_salesowners.csv'), index=False)
     print("Test 5 completed. Output written to companies_with_salesowners.csv\n")
-
-    # Test 6: Data Visualization
-    print("Running Test 6: Data Visualization")
-    plot_distribution_of_crate_type(orders_df, output_dir)
-    print("Plot 1 completed. Output written to distribution_of_orders_by_crate_type.png\n")
-    plot_sales_owners_needing_training(orders_df, output_dir)
-    print("Plot 2 completed. Output written to sales_owners_needing_training.png\n")
-    plot_top_performers_plastic_crates(orders_df, output_dir)
-    print("Plot 3 completed. Output written to top_performers_plastic_crates.png\n")
-
 
 if __name__ == '__main__':
     main()

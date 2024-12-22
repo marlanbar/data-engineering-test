@@ -2,14 +2,14 @@
 
 ## Overview
 
-This project processes and analyzes business data for IFCO's Data Team. It includes data manipulation, sales commission calculations, and data visualization.
+This project processes and analyzes business data for IFCO's Data Team. It includes data manipulation, and sales commission calculations.
 
 ## Project Structure
 
 - **data/**: Contains input data files.
 - **src/**: Contains source code for data processing and visualization.
 - **tests/**: Contains unit tests for each module.
-- **output/**: Contains generated CSV files and plots.
+- **output/**: Contains generated CSV files.
 
 ## Setup Instructions
 
@@ -52,5 +52,3 @@ python -m unittest discover -s tests
 ## Dependencies
 
 - **pandas==1.3.3**
-- **matplotlib==3.4.3**
-- **seaborn==0.11.2**

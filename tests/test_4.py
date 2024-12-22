@@ -1,5 +1,3 @@
-# tests/test_test_4.py
-
 import unittest
 import pandas as pd
 from src.test_4_commissions import calculate_total_commissions
