@@ -14,7 +14,6 @@ def main():
     invoicing_df = load_invoicing_data('resources/invoicing_data.json')
 
     output_dir = 'output'
-    plot_dir = 'plots'
 
     # Test 1: Distribution of Crate Type per Company
     print("Running Test 1: Distribution of Crate Type per Company")
@@ -48,11 +47,11 @@ def main():
 
     # Test 6: Data Visualization
     print("Running Test 6: Data Visualization")
-    plot_distribution_of_crate_type(orders_df, plot_dir)
+    plot_distribution_of_crate_type(orders_df, output_dir)
     print("Plot 1 completed. Output written to distribution_of_orders_by_crate_type.png\n")
-    plot_sales_owners_needing_training(orders_df, plot_dir)
+    plot_sales_owners_needing_training(orders_df, output_dir)
     print("Plot 2 completed. Output written to sales_owners_needing_training.png\n")
-    plot_top_performers_plastic_crates(orders_df, plot_dir)
+    plot_top_performers_plastic_crates(orders_df, output_dir)
     print("Plot 3 completed. Output written to top_performers_plastic_crates.png\n")
 
 
