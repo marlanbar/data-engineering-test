@@ -30,7 +30,7 @@ This project processes and analyzes business data for IFCO's Data Team. It inclu
    pip install -r requirements.txt
    ```
 
-4. **Prepare Data Files**: Place `orders.csv` and `invoicing_data.json` in the `data/` directory.
+4. **Prepare Data Files**: Place `orders.csv` and `invoicing_data.json` in the `resources/` directory.
 
 ## Running the Project
 
